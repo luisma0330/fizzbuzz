@@ -4,7 +4,7 @@ describe("Tests para FizzbuzzService", () => {
     test("Requerimiento 4: Validar si el explorer tiene un score no es divisible entre 3 ni 5", () => {
         const explorer = {name: "Explorer1", score: 1}
         const explorertrick = FizzbuzzService.applyValidationInExplorer(explorer)
-        expect(explorertrick.trick).toBe(2)
+        expect(explorertrick.trick).toBe(1)
     })
     test("Requerimiento 5: Validar si el explorer tiene un score solo divisible entre 3", () => {
         const explorer = {name: "Explorer3", score: 6}
