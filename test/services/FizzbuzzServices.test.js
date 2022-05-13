@@ -21,4 +21,8 @@ describe("Tests para FizzbuzzService", () => {
         const explorertrick = FizzbuzzService.applyValidationInExplorer(explorer);
         expect(explorertrick.trick).toBe("FIZZBUZZ");
     });
+    test("Requerimiento 8: Validar el método de applyValidationInNumber(number)", () => {
+        const trick = FizzbuzzService.applyValidationInNumber(15);
+        expect(trick).toBe("FIZZBUZZ");
+    });
 });
