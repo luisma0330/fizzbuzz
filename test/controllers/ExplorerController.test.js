@@ -1,5 +1,4 @@
 const ExplorerController = require("../../lib/controllers/ExplorerController");
-const FizzbuzzService = require("../../lib/services/FizzbuzzService");
 
 describe("Tests para ExplorerController", () => {
     test("1) Obtener explorers por mission", () => {
@@ -16,7 +15,7 @@ describe("Tests para ExplorerController", () => {
         expect(explorersInNode).toEqual(expected);
     });
     test("4) Obtener la validación fizzbuzz de un numero dado", () => {
-        const trick = FizzbuzzService.applyValidationInNumber(8);
-        expect(trick).toBe(8);
+        const trick = ExplorerController.applyValidationInNumber(5);
+        expect(trick).toBe("BUZZ");
     });
 });
